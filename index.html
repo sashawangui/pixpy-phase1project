@@ -6,27 +6,35 @@
     <title>Pixpy Recipes</title>
   </head>
   <body>
-    <nav id="navbar" class="">
-      <div>
-        <!-- Navbar Logo -->
-        <div class="logo">
-          <a href="#home"
-            ><img width="100px" height="auto" src="images/pixpylogo.png.jpg"
-          /></a>
-        </div>
+    <header>
+      <nav id="navbar" class="">
         <div>
-          <h1>Pixpy Recipes</h1>
-        </div>
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <a href="#home"
+              ><img width="100px" height="auto" src="images/pixpylogo.png.jpg"
+            /></a>
+          </div>
+          <div>
+            <h1 style="color: azure">Pixpy Recipes</h1>
+          </div>
 
-        <!-- Navbar Links -->
-        <ul id="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+          <!-- Navbar Links -->
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <form>
+        <input type="text" placeholder="search" class="searchbar" />
+        <button type="button">Search</button>
+      </form>
+    </header>
+    <div id="homepage"></div>
+    <div id="recipeContainer"></div>
     <script src="flatacuties.js"></script>
   </body>
 </html>
