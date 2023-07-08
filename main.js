@@ -1,14 +1,15 @@
-// const searchBtn = document.getElementById('search-btn');
-// const mealList = document.getElementById('meal');
-// const mealDetailsContent = document.querySelector('.meal-details-content');
-// const recipeCloseBtn = document.getElementById('recipe-close-btn');
+// declare variables for the buttons(easier reference)
+const searchBtn = document.getElementById('search-btn');
+const mealList = document.getElementById('meal');
+const mealDetailsContent = document.querySelector('.meal-details-content');
+const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
-// // event listeners
-// searchBtn.addEventListener('click', getMealList);
-// mealList.addEventListener('click', getMealRecipe);
-// recipeCloseBtn.addEventListener('click', () => {
-//     mealDetailsContent.parentElement.classList.remove('showRecipe');
-// });
+// event listeners
+searchBtn.addEventListener('click', getMealList);
+mealList.addEventListener('click', getMealRecipe);
+recipeCloseBtn.addEventListener('click', () => {
+    mealDetailsContent.parentElement.classList.remove('showRecipe');
+});
 
 
 // get meal list that matches with the ingredients
@@ -54,7 +55,7 @@ function getMealRecipe(e){
     }
 }
 
-// create a modal
+// create a card holding the recipes
 function mealRecipeModal(meal){
     console.log(meal);
     meal = meal[0];
