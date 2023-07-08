@@ -4,13 +4,8 @@ const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
-// event listeners
+// Event listener for getting the meal list that matches with searched ingredient
 searchBtn.addEventListener('click', getMealList);
-mealList.addEventListener('click', getMealRecipe);
-recipeCloseBtn.addEventListener('click', () => {
-    mealDetailsContent.parentElement.classList.remove('showRecipe');
-});
-
 
 // get meal list that matches with the ingredients
 function getMealList(){
@@ -43,6 +38,8 @@ function getMealList(){
     });
 }
 
+// event listener to get the recipe by clicking the get recipe button
+mealList.addEventListener('click', getMealRecipe);
 
 // get recipe of the meal
 function getMealRecipe(e){
@@ -73,3 +70,8 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
+// event listener to remove the recipe card
+recipeCloseBtn.addEventListener('click', () => {
+    mealDetailsContent.parentElement.classList.remove('showRecipe');
+});
