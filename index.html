@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixpy Recipes</title>
-  </head>
-  <body>
-    <header>
-      <nav id="navbar" class="">
-        <div>
-          <!-- Navbar Logo -->
-          <div class="logo">
-            <a href="#home"
-              ><img width="100px" height="auto" src="images/pixpylogo.png.jpg"
-            /></a>
-          </div>
-          <div>
-            <h1 style="color: azure">Pixpy Recipes</h1>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixpy Recipes</title>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
 
-          <!-- Navbar Links -->
-          <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Pixpy Recipes.</h2>
+        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+          <cite>- Jamie Oliver</cite>
+        </blockquote>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "time"></i>
+          </button>
         </div>
-      </nav>
-      <form>
-        <input type="text" placeholder="search" class="searchbar" />
-        <button type="button">Search</button>
-      </form>
-    </header>
-    <div id="homepage"></div>
-    <div id="recipeContainer"></div>
-    <script src="flatacuties.js"></script>
-  </body>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "time"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src = "main.js"></script>
+</body>
 </html>
