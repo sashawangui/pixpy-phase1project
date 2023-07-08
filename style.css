@@ -20,3 +20,14 @@ body{
     outline: 0;
     font-size: 1.05rem;
 }
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container{
+    min-height: 100vh;
+}
