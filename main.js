@@ -4,10 +4,10 @@ const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
-// Event listener for getting the meal list that matches with searched ingredient
+// Event listener for getting the meal list that matches with searched name
 searchBtn.addEventListener('click', getMealList);
 
-// get meal list that matches with the ingredients
+// search meal by name
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInputTxt}`)
