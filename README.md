@@ -1,7 +1,7 @@
 # pixpy-phase1project
 
-Pixpy is a web application that allows you to search for Pixpy recipes. It uses the MealDB API to fetch Pixpy recipes and display them.
-The user inputs an ingredient or a meal item eg chicken, apples etc and gets back recipes that use the searched ingredient.
+Pixpy is a web application that allows you to search for Pixpy recipes. It uses the MealDB API to fetch recipes and display them.
+The user inputs an ingredient or a meal item eg chicken, apples etc and gets back recipes that are prepared using the searched ingredient.
 
 ## Features
 
@@ -11,9 +11,9 @@ The user inputs an ingredient or a meal item eg chicken, apples etc and gets bac
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- HTML- To build the general sturcture of the web page
+- CSS - to style the web page and it's components
+- JavaScript - To addd functionality to the web page and manipulate the DOM
 
 ## Usage
 
